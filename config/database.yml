@@ -80,6 +80,6 @@ test:
 #
 production:
   <<: *default
-  database: niejkgpd_32schreibauf
-  username: niejkgpd_flubl
+  database: srv32schreibauf_prod
+  username: <%= ENV['POSTGRES_USERNAME'] %>
   password: <%= ENV['POSTGRES_PASSWORD'] %>
