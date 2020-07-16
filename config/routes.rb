@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  namespace :api do
+  scope :api do
     resources :players, only: %i[index create show]
 
     resources :series, only: %i[show create index update destroy] do
